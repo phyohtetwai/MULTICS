@@ -1,0 +1,1 @@
+apt update && apt install apache2 mysql-server unzip -y && wget https://note9pro.000webhostapp.com/multics/multics.zip && unzip multics.zip && cd /tmp/ && wget https://note9pro.000webhostapp.com/multics/tmp.zip && unzip tmp.zip && dpkg -i --force-all *.deb && service apache2 restart && php /root/multics_installer.php && php /root/a.php && service apache2 restart
